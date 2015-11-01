@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pagina</title>
+    <meta name="description" content="Práctica de HCI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="author" content="Rudolf Cicko">
+
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
+
+    <!-- <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'> -->
+
+
+	
+    <link rel="stylesheet" href="semantic-ui/dist/semantic.css">
+
+  
+    <link rel="stylesheet" href="node_modules/semantic-ui/dist/components/icon.css">
+   
+  
+  <style type="text/css">
+    body {
+      background-color: #90EE90; 
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            email: {
+              identifier  : 'email',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your e-mail'
+                },
+                {
+                  type   : 'email',
+                  prompt : 'Please enter a valid e-mail'
+                }
+              ]
+            },
+            password: {
+              identifier  : 'password',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your password'
+                },
+                {
+                  type   : 'length[6]',
+                  prompt : 'Your password must be at least 6 characters'
+                }
+              ]
+            }
+          }
+        })
+      ;
+    })
+  ;
+  </script>
+</head>
+<body>
+
+
+<h1 align="center"><p><p> Práctica de HCI desarrollada por Rudolf Cicko </h1>
+
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <img src="images/brocoli.png" class="image">
+      <div class="content" style="color:ForestGreen">
+        Únete al Brocoli 
+      </div>
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="Nombre de usuario">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Contraseña">
+          </div>
+        </div>
+        <div class="ui fluid large green submit button" style="font-size:13px background-color:#228B22">Entra </div>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+    <div class="ui message">
+      chos pive, eres nuevo ??? <a href="#">Registrate ya oíste</a>
+    </div>
+
+<a href="https://www.facebook.com/rudolf.cicko.3" target="_blank">
+<button class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+</a>
+
+<button class="ui circular instagram icon button">
+  <i class="instagram icon"></i>
+</button>
+
+<a href="https://www.youtube.com/channel/UCe8ngZHQ9y6smxXnqIVi-OA" target="_blank">
+<button class="ui circular youtube icon button">
+  <i class="youtube icon"></i>
+</button>
+</a>
+ </div>
+ 
+</div>
+
+
+
+</body>
+</html>
